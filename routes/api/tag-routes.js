@@ -71,6 +71,7 @@ router.delete('/:id', async (req, res) => {
       res.status(404).json({
         message: 'Tag not found'
       });
+      return;
     }
 
     res.status(200).json(tagData);
